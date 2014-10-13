@@ -1,6 +1,6 @@
 {
   "name": "ripple-send",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Command-lnie utilities for preparing, signing and broadcasting Ripple transactions",
   "scripts": {
     "ripple-prepare": "./bin/prepare",
