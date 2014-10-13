@@ -1,19 +1,19 @@
 {
-  "name": "stellar-send",
+  "name": "ripple-send",
   "version": "1.0.1",
-  "description": "Command-lnie utilities for preparing, signing and broadcasting Stellar transactions",
+  "description": "Command-lnie utilities for preparing, signing and broadcasting Ripple transactions",
   "scripts": {
-    "stellar-prepare": "./bin/prepare",
-    "stellar-broadcast": "./bin/broadcast",
-    "stellar-sign": "./bin/sign",
-    "stellar-payment": "./bin/payment"
+    "ripple-prepare": "./bin/prepare",
+    "ripple-broadcast": "./bin/broadcast",
+    "ripple-sign": "./bin/sign",
+    "ripple-payment": "./bin/payment"
   },
   "preferGlobal": true,
   "author": "Andreas Brekken <a@abrkn.com>",
   "license": "ISC",
   "dependencies": {
     "optimist": "^0.6.1",
-    "stellar-client": "^1.0.0",
-    "stellar-lib": "^0.9.6"
+    "ripple-client": "^1.0.1",
+    "ripple-lib": "^0.8.2"
   }
 }

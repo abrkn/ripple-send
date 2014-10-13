@@ -1,4 +1,4 @@
-var StellarClient = require('stellar-client')
+var RippleClient = require('ripple-client')
 var argv = require('optimist')
 .demand('account')
 .demand('secret')
@@ -7,7 +7,7 @@ var argv = require('optimist')
 .argv
 var secrets = {}
 secrets[argv.account] = argv.secret
-var client = new StellarClient({
+var client = new RippleClient({
 	secrets: secrets
 })
 var tx = {

@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-var StellarClient = require('stellar-client')
+var RippleClient = require('ripple-client')
 
 process.stdin.once('data', function(blob) {
-	var client = new StellarClient()
+	var client = new RippleClient()
 	client.once('open', function() {
 		var tx = { tx_blob: blob.toString().replace(/\s/g, '') }
 		client.request('submit', tx, function(err, res) {

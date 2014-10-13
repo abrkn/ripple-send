@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-var StellarLib = require('stellar-lib')
-var StellarClient = require('stellar-client')
+var RippleLib = require('ripple-lib')
+var RippleClient = require('ripple-client')
 var argv = require('optimist')
 .demand('account')
 .demand('destination')
@@ -21,7 +21,7 @@ if (argv.dt) {
 	tx.DestinationTag = argv.dt
 }
 
-var client = new StellarClient()
+var client = new RippleClient()
 client.once('open', function() {
 	client.request('account_info', { account: argv.account }, function(err, res) {
 		if (err) throw err

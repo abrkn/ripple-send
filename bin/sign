@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-var StellarLib = require('stellar-lib')
+var RippleLib = require('ripple-lib')
 var argv = require('optimist')
 .demand('secret')
 .demand('tx')
 .argv
 
 // From ripple-lib/bin/rsign.js
-var tx = new StellarLib.Transaction()
+var tx = new RippleLib.Transaction()
 tx.remote = null
 tx.tx_json = JSON.parse(argv.tx)
 tx._secret = argv.secret
